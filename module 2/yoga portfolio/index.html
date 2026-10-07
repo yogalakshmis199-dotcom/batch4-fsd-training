@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>My Portfolio</h2>
+        <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+        </ul>
+    <button id="themeBtn">🌙 Dark Mode</button>
+    </nav>
+
+    <section id="home">
+        <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+
+        <h1>Hi, I'm Yogalakshmi</h1>
+        <p>Welcome to my Portfolio</p>
+    </section>
+ 
+    <section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate student interested in
+        Web Development, Python and Cloud Computing.
+    </p>
+    <a href="resume.pdf" download>
+    <button>Download Resume</button>
+    </a>
+
+    </section>
+
+    <section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Web Page Structure</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Web Page Design</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Interactive Websites</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Python</h3>
+            <p>Programming & Data Science</p>
+        </div>
+
+    </div>
+    </section>
+
+    <section id="stats">
+
+    <h2>My Achievements</h2>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h3>5+</h3>
+            <p>Projects</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>4+</h3>
+            <p>Technologies</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>10+</h3>
+            <p>Certificates</p>
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Expense Calculator</h3>
+            <p>A simple Python project to calculate income, expenses and savings.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Water Quality Monitoring</h3>
+            <p>A cloud-based project for monitoring water quality.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>College Event Portal</h3>
+            <p>A responsive website for managing college events.</p>
+        </div>
+
+<div class="project-card">
+    <h3>Expense Calculator</h3>
+    <p>A Python project to calculate income, expenses and savings.</p>
+    <button class="view-btn" data-project="Expense Calculator">View Project</button>
+</div>
+
+<div class="project-card">
+    <h3>Water Quality Monitoring</h3>
+    <p>A cloud-based project for monitoring water quality.</p>
+    <button class="view-btn" data-project="Water Quality Monitoring">View Project</button>
+</div>
+
+<div class="project-card">
+    <h3>College Event Portal</h3>
+    <p>A responsive website for college events.</p>
+    <button class="view-btn" data-project="College Event Portal">View Project</button>
+</div>
+
+    </div>
+    </section>
+
+    <section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+
+        <input 
+            type="text" 
+            id="name" 
+            placeholder="Enter your name"
+        >
+
+        <input 
+            type="email" 
+            id="email" 
+            placeholder="Enter your email"
+        >
+
+        <textarea 
+            id="message" 
+            placeholder="Enter your message"
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <p id="formMessage"></p>
+
+    </form>
+
+    <div class="social-links">
+
+    <a href="https://github.com/yogalakshmis199-dotcom"target="_blank">
+        GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/yogalakshmi-s-272058333?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+        LinkedIn
+    </a>
+
+    <a href="https://www.instagram.com/ft.yogx?stkn=MTM2c2c1ZGl4Z3NnOA==" target="_blank">
+        Instagram
+    </a>
+
+</div>
+
+</section>
+
+    <form>
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+        <textarea placeholder="Enter your message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    </section>
+<script src="script.js"></script>
+
+<div id="projectModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Yogalakshmi. All Rights Reserved.</p>
+</footer>
+
+<button id="topBtn">↑</button>
+
+</body>
+</html>
